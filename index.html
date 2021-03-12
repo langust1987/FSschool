@@ -1,0 +1,120 @@
+﻿ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport"content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>сайт</title>
+   <link rel="stylesheet" href="css/main.css">
+ </head>
+ <body>
+   <header>
+     <div id="logo" onclick="slowScroll('#top')">
+         <span>Футбольная школа"Юниор"</span>
+
+          </div>
+
+      <div id="about">
+           <a href="#" title="Возможности" onclick="slowScroll('#main')">Возможности</a>
+           <a href="#"onclick="slowScroll('#overview')" title="Преимущества">Преимущества</a>
+           <a href="#"onclick="slowScroll('#contacts')" title="Контакты">Обратная связь</a>
+           <a href="#"onclick="slowScroll('#faq')" title="Ответы на вопросы">Контакты</a>
+           <a href="#"onclick="slowScroll('#video')" title="Видеообзор">Видеообзор</a>
+
+      </div>
+    </header>
+
+    <div id="top">
+        <h1>Футбол самое важное дело</h1>
+        <h3>из всех неважных дел!</h3>
+          </div>
+
+    <div id= "main">
+      <div class= "intro">
+        <h2> Мы растим чемпионов</h2>
+          <span>Набор детей от 3 лет</span>
+            <p>Даем возможность раскрыть талант</p>
+      </div>
+        <div class="text">
+          <span> </span>
+          <p>Детская футбольная школа "Юниор".
+      Крупнейшая в России сеть частных футбольных школ. Филиал в городе Вологда.
+      Первое пробное занятие бесплатно.
+      Мы приглашаем Вас приобщить ваших детей к самому замечательному и популярному виду спорта - футболу!</P>
+     </div>
+    </div>
+
+ <div id="overview">
+  <h2>Преимущества:</h2>
+  <h4>с нами все получится</h4>
+
+  <div class="img">
+    <img src="https://cdn1.savepice.ru/uploads/2021/3/9/dbfebd86c25d7c227c05863fe3733a4d-full.jpg" alt="">
+    <span>Тренировки</span>
+  </div>
+  <div class="img">
+      <img src="https://cdn1.savepice.ru/uploads/2021/3/9/ed76006042a3e1b539e12053821d62ec-full.jpg" alt="">
+      <span>Расписание</span>
+  </div>
+  <div class="img">
+        <img src="https://cdn1.savepice.ru/uploads/2021/3/9/76140b510e807fba84a46f6d74435efd-full.jpg" alt="">
+        <span>Упражнения</span>
+  </div>
+  <div class="img">
+          <img src="https://cdn1.savepice.ru/uploads/2021/3/12/92010ef4b5a962e1a03126e628da3b1a-full.jpg" alt="">
+          <span>Достижения</span>
+    </div>
+  </div>
+
+  <div id="video">
+     <h2>Видеообзор</h2>
+       <iframe width="720" height="480" src="https://www.youtube.com/embed/fF3UZQb7DoY?autoplay=1" frameborder="0" allowfullscreen></iframe><br>
+        </div>
+
+
+<div id="contacts">
+  <center><h5>Обратная связь</h5></center>
+  <form id="form_input">
+    <label for="name">Имя <span>*</span><label><br>
+      <input type="text"placeholder="Введите имя" name="name" id="name"><br>
+      <label for="email">Ваша почта <span>*</span><label><br>
+        <input type="email"placeholder="Введите email" name="email" id="email"><br>
+        <label for="message">Сообщение <span>*</span><label><br>
+          <textarea placeholder="Введите ваше сообщение" name="message" id="message"></textarea><br>
+          <div id="mess_send" class="btn"> Отправить</div>
+        </form>
+      </div>
+
+    <div id="faq">
+    <div>
+      <span class="title">Контакты</span><br>
+    <span class="headig">Наш режим работы в будни: с 08:00-20:00. Суббота,воскресенье: выходной. Телефоны: моб.+792100000, раб.54-13-29. Наш адрес: г.Вологда ул.Костромская д.5
+  <p></p>
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5778.616872670617!2d39.83983673455351!3d59.198468822876066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ae97605250823f%3A0xffa12adda3e37577!2z0JrQvtGB0YLRgNC-0LzRgdC60LDRjyDRg9C7LiwgNSwg0JLQvtC70L7Qs9C00LAsINCS0L7Qu9C-0LPQvtC00YHQutCw0Y8g0L7QsdC7Liwg0KDQvtGB0YHQuNGPLCAxNjAwMzQ!5e0!3m2!1sru!2sua!4v1615470890749!5m2!1sru!2sua" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+
+
+   </span>
+    </div>
+      <div>
+        <span class="title">О сайте</span><br>
+        <span class="headig">Сайт был сделан студентом кафедры АВТ Наумовым А.С.</span>
+              </div>
+      </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+      function slowScroll(id) {
+        $('html, body').animate({
+            scrollTop: $(id).offset().top
+            }, 500);
+          }
+
+          $(document).on("Scroll", function () {
+      if($(window).scrollTop() === 0)
+        $("header").removeClass("fixed");
+      else
+      $("header").attr("class", "fixed");
+    });
+   </script>
+   </body>
+ </html>
